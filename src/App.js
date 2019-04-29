@@ -260,13 +260,13 @@ class App extends React.Component {
             Find me on:
           </Typography>
           <Typography variant="subtitle1" align="center" color="textSecondary" component="p" className={classes.footerLinks}>
-            <Link href={'https://www.kaggle.com/guilhermekodama'} color="inherit" className={classes.link}>
+            <Link target="_blank" rel="noopener" href={'https://www.kaggle.com/guilhermekodama'} color="inherit" className={classes.link}>
               Kaggle
             </Link>
-            <Link href={'https://www.linkedin.com/in/guilhermekodama/'} color="inherit" className={classes.link}>
+            <Link target="_blank" rel="noopener" href={'https://www.linkedin.com/in/guilhermekodama/'} color="inherit" className={classes.link}>
               LinkedIn
             </Link>
-            <Link href={'https://github.com/guilhermeKodama'} color="inherit" className={classes.link}>
+            <Link target="_blank" rel="noopener" href={'https://github.com/guilhermeKodama'} color="inherit" className={classes.link}>
               GitHub
             </Link>
           </Typography>
