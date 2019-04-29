@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/guilhermeKodama/guilhermekodama.github.io",
+  "homepage": "https://guilhermekodama.github.io/guilhermekodama.github.io",
   "name": "guilhermekodama.github.io",
   "version": "0.1.0",
   "private": true,
@@ -14,7 +14,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
+    "predeploy": "yarn run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
