@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/guilhermeKodama/guilhermekodama.github.io/static/css/main.584f321a.chunk.css",
-    "main.js": "/guilhermeKodama/guilhermekodama.github.io/static/js/main.bdbbcfb5.chunk.js",
-    "main.js.map": "/guilhermeKodama/guilhermekodama.github.io/static/js/main.bdbbcfb5.chunk.js.map",
-    "runtime~main.js": "/guilhermeKodama/guilhermekodama.github.io/static/js/runtime~main.ffe64e43.js",
-    "runtime~main.js.map": "/guilhermeKodama/guilhermekodama.github.io/static/js/runtime~main.ffe64e43.js.map",
-    "static/js/2.b41502e9.chunk.js": "/guilhermeKodama/guilhermekodama.github.io/static/js/2.b41502e9.chunk.js",
-    "static/js/2.b41502e9.chunk.js.map": "/guilhermeKodama/guilhermekodama.github.io/static/js/2.b41502e9.chunk.js.map",
-    "index.html": "/guilhermeKodama/guilhermekodama.github.io/index.html",
-    "precache-manifest.be392fa5f1507180a166fab1cc6fdfea.js": "/guilhermeKodama/guilhermekodama.github.io/precache-manifest.be392fa5f1507180a166fab1cc6fdfea.js",
-    "service-worker.js": "/guilhermeKodama/guilhermekodama.github.io/service-worker.js",
-    "static/css/main.584f321a.chunk.css.map": "/guilhermeKodama/guilhermekodama.github.io/static/css/main.584f321a.chunk.css.map",
-    "static/media/logo.svg": "/guilhermeKodama/guilhermekodama.github.io/static/media/logo.5d5d9eef.svg"
+    "main.css": "/guilhermekodama.github.io/static/css/main.584f321a.chunk.css",
+    "main.js": "/guilhermekodama.github.io/static/js/main.8fb019ff.chunk.js",
+    "main.js.map": "/guilhermekodama.github.io/static/js/main.8fb019ff.chunk.js.map",
+    "runtime~main.js": "/guilhermekodama.github.io/static/js/runtime~main.b3181bfd.js",
+    "runtime~main.js.map": "/guilhermekodama.github.io/static/js/runtime~main.b3181bfd.js.map",
+    "static/js/2.b41502e9.chunk.js": "/guilhermekodama.github.io/static/js/2.b41502e9.chunk.js",
+    "static/js/2.b41502e9.chunk.js.map": "/guilhermekodama.github.io/static/js/2.b41502e9.chunk.js.map",
+    "index.html": "/guilhermekodama.github.io/index.html",
+    "precache-manifest.541a057bde4b34b53cc95e4ef8e5f137.js": "/guilhermekodama.github.io/precache-manifest.541a057bde4b34b53cc95e4ef8e5f137.js",
+    "service-worker.js": "/guilhermekodama.github.io/service-worker.js",
+    "static/css/main.584f321a.chunk.css.map": "/guilhermekodama.github.io/static/css/main.584f321a.chunk.css.map",
+    "static/media/logo.svg": "/guilhermekodama.github.io/static/media/logo.5d5d9eef.svg"
   }
 }
