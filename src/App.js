@@ -3,7 +3,11 @@ import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import AppBar from '@material-ui/core/AppBar'
 import Button from '@material-ui/core/Button'
-import CameraIcon from '@material-ui/icons/Assessment'
+import AssessmentIcon from '@material-ui/icons/Assessment'
+import EmailIcon from '@material-ui/icons/MailOutline'
+import PhoneIcon from '@material-ui/icons/Phone'
+import GitHubIcon from '@material-ui/icons/GitHub'
+import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import Card from '@material-ui/core/Card'
 import CardActions from '@material-ui/core/CardActions'
 import CardContent from '@material-ui/core/CardContent'
@@ -14,13 +18,13 @@ import Avatar from '@material-ui/core/Avatar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
 import Link from '@material-ui/core/Link'
-import Clipboard from 'react-clipboard.js'
 import Snackbar from '@material-ui/core/Snackbar'
 import ImageMe from './static/me_square.png'
-import ImagePandora from './static/pandora.png'
+import ImagePi from './static/pi-monitor.png'
 import ImagePetFinder from './static/petfinder.png'
 import ImageCarrerCon from './static/carrercon.png'
 import ImageClosetinn from './static/closetinn.png'
+import ImageMee from './static/mee.png'
 import { withStyles } from '@material-ui/core/styles'
 
 const styles = theme => ({
@@ -29,6 +33,9 @@ const styles = theme => ({
   },
   icon: {
     marginRight: theme.spacing.unit * 2,
+  },
+  iconInfo: {
+    marginBottom: -theme.spacing.unit * 1,
   },
   heroUnit: {
     backgroundColor: theme.palette.background.paper,
@@ -94,62 +101,102 @@ const styles = theme => ({
 const cards = [
   {
     id: 1,
-    url: 'https://github.com/guilhermeKodama/Pandora/blob/master/python-wavelet/pandora-ecg.ipynb',
-    image: ImagePandora,
-    title: 'Pandora - Arrhythmia Detection service',
+    url: 'https://github.com/somosmee/mee/blob/feat-association-analysis/datascience/Associative%20Analysis.ipynb',
+    image: ImageMee,
+    title: 'Mee - Association Analysis',
     body: (
-      <ul>
-        <li>ECG signal processing with BioSPPy</li>
-        <li>Feature engineering with time series ECG</li>
-        <li>Data wrangling with PhysioBank databases to create a labeled dataset</li>
-        <li>Machine Learning model for realtime  Arrhythmia Detection from ECG signal</li>
-        <li>85% accuracy for 5 different arrhythmia classes</li>
-      </ul>
+      <div>
+        <p>
+          Mee is a Retail Tech which I helped increase the average ticket and decrease attendance time with item recommendations using Associative Analysis.
+        </p>
+        <ul>
+          <li>Training Apriori model to create association rules.</li>
+          <li>Display rules as suggestions to help attendants add more items to open orders increasing the average ticket.</li>
+          <li>Use suggestions as a "smart cache" to help attendants add commonly bought together items faster.</li>
+        </ul>
+      </div>
     )
   },
   {
     id: 2,
-    url: 'https://www.kaggle.com/guilhermekodama/eda-petfinder-competition-catboost-baseline',
-    image: ImagePetFinder,
-    title: 'PetFinder Competition - Kaggle',
+    url: 'https://nbviewer.jupyter.org/github/guilhermeKodama/Pandora/blob/master/python-wavelet/pandora-ecg.ipynb',
+    image: ImagePi,
+    title: 'Pandora - Arrhythmia Detection service',
     body: (
-      <ul>
-        <li>Extensive data exploration</li>
-        <li>Generating features from images using CNNs and PCA</li>
-        <li>Generating features from unstructured text using TF-IDF and TruncatedSVD</li>
-        <li>Feature engineering from structured data</li>
-        <li>Models precision/recall evaluation</li>
-        <li>Parameter Tuning</li>
-        <li>Top 23% on public leaderboard</li>
-      </ul>
+      <div>
+        <p>
+        Pandora is a healthcare project focused on analysing signals from health monitors.
+        This first MVP processed and classified ECG signals for 5 different arrhytmias categories.
+        Check the video in the link for a demo to see the model and product in action.
+        </p>
+        <ul>
+          <li>ECG signal processing with BioSPPy</li>
+          <li>Feature engineering with time series ECG</li>
+          <li>Data wrangling with PhysioBank databases to create a labeled dataset</li>
+          <li>Machine Learning model for realtime  Arrhythmia Detection from ECG signal</li>
+          <li>85% accuracy for 5 different arrhythmia classes</li>
+        </ul>
+      </div>
     )
   },
   {
     id: 3,
-    url: 'https://www.kaggle.com/guilhermekodama/carrercon-rf-baseline-and-simple-features',
-    image: ImageCarrerCon,
-    title: 'CarrerCon - Kaggle',
-    body: (
-      <ul>
-        <li>Data exploration and visualization</li>
-        <li>Feature engineering with time series</li>
-        <li>Models evaluation</li>
-        <li>Parameter tuning</li>
-        <li>Top 100 score on public leaderboard</li>
-      </ul>
-    )
-  },
-  {
-    id: 4,
     url: 'https://github.com/guilhermeKodama/Closetinn/tree/master/machineLearning',
     image: ImageClosetinn,
     title: 'Closetinn - Fashion recommendation service',
     body: (
-      <ul>
-        <li>Data wrangling with web scrapped data from different fashion e-commerces sources</li>
-        <li>Collaborative filtering Recommendation System (real users)</li>
-        <li>Machine Learning model to predict user churn to improve email marketing and recommendations</li>
-      </ul>
+      <div>
+        <p>
+          Closetinn is a email service for clothes recommendations. Customers do a initial cloth selection and receive weekly emails with recommendations for many e-commerce sources.
+        </p>
+        <ul>
+          <li>Data wrangling with web scrapped data from different fashion e-commerces sources</li>
+          <li>Collaborative filtering Recommendation System (real users)</li>
+          <li>Machine Learning model to predict user churn to improve email marketing and recommendations</li>
+        </ul>
+      </div>
+    )
+  },
+  {
+    id: 4,
+    url: 'https://www.kaggle.com/guilhermekodama/eda-petfinder-competition-catboost-baseline',
+    image: ImagePetFinder,
+    title: 'PetFinder Competition - Kaggle',
+    body: (
+      <div>
+        <p>
+          In this competition you will be developing algorithms to predict the adoptability of pets - specifically, how quickly is a pet adopted? If successful, they will be adapted into AI tools that will guide shelters and rescuers around the world on improving their pet profiles' appeal, reducing animal suffering and euthanization.
+        </p>
+        <ul>
+          <li>Extensive data exploration</li>
+          <li>Generating features from images using CNNs and PCA</li>
+          <li>Generating features from unstructured text using TF-IDF and TruncatedSVD</li>
+          <li>Feature engineering from structured data</li>
+          <li>Models precision/recall evaluation</li>
+          <li>Parameter Tuning</li>
+          <li>Top 23% on public leaderboard</li>
+        </ul>
+      </div>
+    )
+  },
+  {
+    id: 5,
+    url: 'https://www.kaggle.com/guilhermekodama/carrercon-rf-baseline-and-simple-features',
+    image: ImageCarrerCon,
+    title: 'CarrerCon - Kaggle',
+    body: (
+      <div>
+        <p>
+          In this competition, you’ll help robots recognize the floor surface they’re standing on using data collected from Inertial Measurement Units (IMU sensors).
+        </p>
+        <ul>
+          <li>Data exploration and visualization</li>
+          <li>Feature engineering with time series</li>
+          <li>Models evaluation</li>
+          <li>Parameter tuning</li>
+          <li>Top 100 score on public leaderboard</li>
+        </ul>
+      </div>
     )
   }
 ]
@@ -185,7 +232,7 @@ class App extends React.Component {
             message={message}
           />
           <Toolbar>
-            <CameraIcon className={classes.icon} />
+            <AssessmentIcon className={classes.icon} />
             <Typography variant="h6" color="inherit" noWrap>
               Data Science Portfolio
             </Typography>
@@ -200,25 +247,42 @@ class App extends React.Component {
                 Guilherme Kodama
               </Typography>
               <Typography variant="h6" align="center" color="textSecondary" paragraph>
-                I am a Data Scientist enthusiast passionate about solving problems using AI with experience
-                training and scaling ML models to production-ready services and +6 years experience
-                in the software development industry.
+                I am a curious, driven and self-starter developer passionate about data that has created smart services and co-founded projects that helped solve world-class problems from the most different sectors for the last +7 years.
               </Typography>
               <div className={classes.heroButtons}>
-                <Grid container spacing={16} justify="center">
+                <Grid container spacing={3} justify="center">
                   <Grid item>
-                  <Clipboard data-clipboard-text="guilherme.kodama@gmail.com" className={classes.clipboard}>
-                    <Button onClick={(e) => this.handleClick('Email copied to clipboard!')} variant="contained" color="primary">
-                      Email me
-                    </Button>
-                    </Clipboard>
+                    <Link target="_blank" rel="noopener" href={'https://www.linkedin.com/in/guilhermekodama/'} color="inherit" className={classes.link}>
+                      <Typography variant="subtitle1" color="textSecondary" gutterBottom>
+                         <LinkedInIcon className={classes.iconInfo}/> LinkedIn
+                      </Typography>
+                    </Link>
                   </Grid>
                   <Grid item>
-                    <Clipboard data-clipboard-text="+55 (92) 981233668" className={classes.clipboard}>
-                      <Button onClick={(e) => this.handleClick('Number copied to clipboard!')} variant="outlined" color="primary">
-                        Call me
-                      </Button>
-                    </Clipboard>
+                    <Link target="_blank" rel="noopener" href={'https://github.com/guilhermeKodama'} color="inherit" className={classes.link}>
+                      <Typography variant="subtitle1" color="textSecondary" gutterBottom>
+                         <GitHubIcon className={classes.iconInfo}/> GitHub
+                      </Typography>
+                    </Link>
+                  </Grid>
+                  <Grid item>
+                    <Link target="_blank" rel="noopener" href={'https://www.kaggle.com/guilhermekodama'} color="inherit" className={classes.link}>
+                      <Typography variant="subtitle1" color="textSecondary" gutterBottom>
+                         <AssessmentIcon className={classes.iconInfo}/> Kaggle
+                      </Typography>
+                    </Link>
+                  </Grid>
+                </Grid>
+                <Grid container spacing={3} justify="center">
+                  <Grid item>
+                    <Typography variant="subtitle1" color="textSecondary" gutterBottom>
+                       <EmailIcon className={classes.iconInfo}/> guilherme.kodama@gmail.com
+                    </Typography>
+                  </Grid>
+                  <Grid item>
+                    <Typography variant="subtitle1" color="textSecondary" gutterBottom>
+                      <PhoneIcon className={classes.iconInfo}/> +55 11 98776-2113
+                    </Typography>
                   </Grid>
                 </Grid>
               </div>
@@ -226,7 +290,7 @@ class App extends React.Component {
           </div>
           <div className={classNames(classes.layout, classes.cardGrid)}>
             {/* End hero unit */}
-            <Grid container spacing={24}>
+            <Grid container spacing={3}>
               {cards.map(card => (
                 <Grid item key={card.id} xs={12} sm={6}>
                   <Card className={classes.card}>
@@ -245,7 +309,7 @@ class App extends React.Component {
                     </CardContent>
                     <CardActions>
                       <Button onClick={(e) => { window.open(card.url, '_blank') }} size="small" color="primary">
-                        View
+                        VIEW PROJECT
                       </Button>
                     </CardActions>
                   </Card>
