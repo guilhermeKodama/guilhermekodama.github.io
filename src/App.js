@@ -101,7 +101,7 @@ const styles = theme => ({
 const cards = [
   {
     id: 1,
-    url: 'https://github.com/somosmee/mee/blob/feat-association-analysis/datascience/Associative%20Analysis.ipynb',
+    url: 'https://github.com/somosmee/mee-public/blob/master/datascience/Associative%20Analysis.ipynb',
     image: ImageMee,
     title: 'Mee - Association Analysis',
     body: (
